@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test978">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Cover">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name = ".MainActivity" android:label ="activity_main 액티비티"/>
+        <activity android:name = ".SecondActivity" android:label ="Second 액티비티"/>
+        <activity android:name = ".SecondActivity2" android:label ="Second1 액티비티"/>
+        <activity android:name = ".Cheongdamdong" android:label ="cheongdamdong 액티비티"/>
+        <activity android:name = ".Samsungdong" android:label ="samsungdong 액티비티"/>
+        <activity android:name = ".Daechidong" android:label ="Daechidong 액티비티"/>
+        <activity android:name = ".Sinsadong" android:label ="sinsadong 액티비티"/>
+        <activity android:name = ".Nonhyundong" android:label ="Nonhyundong 액티비티"/>
+        <activity android:name = ".Apgujeongdong" android:label ="apgujeongdong 액티비티"/>
+        <activity android:name = ".Segogdong" android:label ="segogdong 액티비티"/>
+        <activity android:name = ".Jagogdong" android:label ="Jagogdong 액티비티"/>
+        <activity android:name = ".Yulhyundong" android:label ="yulhyundong 액티비티"/>
+        <activity android:name = ".Ilwondong" android:label ="Ilwondong 액티비티"/>
+        <activity android:name = ".Sooseodong" android:label ="sooseodong 액티비티"/>
+        <activity android:name = ".Dogogdong" android:label ="dogogdong 액티비티"/>
+        <activity android:name = ".Nonhyun1dong" android:label ="nonhyun1dong 액티비티"/>
+        <activity android:name = ".Nonhyun2dong" android:label ="nonhyun2dong 액티비티"/>
+        <activity android:name = ".Samsung1dong" android:label ="samsung1dong 액티비티"/>>
+        <activity android:name = ".Samsung2dong" android:label ="samsung2dong 액티비티"/>
+        <activity android:name = ".Daechi1dong" android:label ="daechi1dong 액티비티"/>
+        <activity android:name = ".Daechi2dong" android:label ="daechi2dong 액티비티"/>
+        <activity android:name = ".Daechi4dong" android:label ="daechi4dong 액티비티"/>
+        <activity android:name = ".Yuksam1dong" android:label ="Yuksam1dong 액티비티"/>
+        <activity android:name = ".Yuksam2dong" android:label ="Yuksam2dong 액티비티"/>
+        <activity android:name = ".Dogog1dong" android:label ="Dogog2dong 액티비티"/>
+        <activity android:name = ".Gaepo1dong" android:label ="gaepo1dong 액티비티"/>
+        <activity android:name = ".Gaepo2dong" android:label ="gaepo2dong 액티비티"/>
+        <activity android:name = ".Gaepo4dong" android:label ="gaepo4dong 액티비티"/>
+        <activity android:name = ".Ilwonbondong" android:label ="Ilwonbondong 액티비티"/>
+        <activity android:name = ".Ilwon1dong" android:label ="Ilwon1dong 액티비티"/>
+        <activity android:name = ".Ilwon2dong" android:label ="Ilwon2dong 액티비티"/>
+        <activity android:name = ".Myungildong" android:label ="myungildong 액티비티"/>
+        <activity android:name = ".Godukdong" android:label ="godukong 액티비티"/>
+        <activity android:name = ".Sangildong" android:label ="sangildong 액티비티"/>
+        <activity android:name = ".Gildong" android:label ="gildong 액티비티"/>
+        <activity android:name = ".Dunchondong" android:label ="dunchondong 액티비티"/>
+        <activity android:name = ".Amsadong" android:label ="amsadong 액티비티"/>
+        <activity android:name = ".Sungnaedong" android:label ="sungnaedong 액티비티"/>
+        <activity android:name = ".Chunhodong" android:label ="Chunhodong 액티비티"/>
+        <activity android:name = ".Gangildong" android:label ="gangildong 액티비티"/>
+        <activity android:name = ".Myungil1dong" android:label ="myungildong 액티비티"/>
+        <activity android:name = ".Myungil2dong" android:label ="myungil2dong 액티비티"/>
+        <activity android:name = ".Goduk1dong" android:label ="goduk1dong 액티비티"/>
+        <activity android:name = ".Goduk2dong" android:label ="goduk2dong 액티비티"/>
+        <activity android:name = ".Amsa1dong" android:label ="amsa1dong 액티비티"/>
+        <activity android:name = ".Amsa2dong" android:label ="amsa2dong 액티비티"/>
+        <activity android:name = ".Amsa3dong" android:label ="amsa3dong 액티비티"/>
+        <activity android:name = ".Chunho1dong" android:label ="chunho1dong 액티비티"/>
+        <activity android:name = ".Chunho2dong" android:label ="chunho2dong 액티비티"/>
+        <activity android:name = ".Chunho3dong" android:label ="chunho3dong 액티비티"/>
+        <activity android:name = ".Sungnae1dong" android:label ="sungnae1dong 액티비티"/>
+        <activity android:name = ".Sungnae2dong" android:label ="sungnae2dong 액티비티"/>
+        <activity android:name = ".Sungnae3dong" android:label ="sungnae3dong 액티비티"/>
+        <activity android:name = ".Dunchon1dong" android:label ="dunchon1dong 액티비티"/>
+        <activity android:name = ".Dunchon2dong" android:label ="dunchon2dong 액티비티"/>
+        <activity android:name = ".Dowondong" android:label ="dowondong 액티비티"/>
+        <activity android:name = ".Bookseongdong" android:label ="bookseongdong 액티비티"/>
+        <activity android:name = ".Songwoldong" android:label ="songwoldong 액티비티"/>
+        <activity android:name = ".Sinpodong" android:label ="sinpodong 액티비티"/>
+        <activity android:name = ".Sinheungdong" android:label ="sinheungdong 액티비티"/>
+        <activity android:name = ".Yunandong" android:label ="yunandong 액티비티"/>
+        <activity android:name = ".Yungjongdong" android:label ="yungjongdong 액티비티"/>
+        <activity android:name = ".Yoonseodong" android:label ="yoonseodong 액티비티"/>
+        <activity android:name = ".Yulmokdong" android:label ="yulmokdong 액티비티"/>
+        <activity android:name = ".Jungsandong" android:label ="jungsandong 액티비티"/>
+        <activity android:name = ".Sinam1dong" android:label ="sinam1dong 액티비티"/>
+        <activity android:name = ".Sinam2dong" android:label ="sinam2dong 액티비티"/>
+        <activity android:name = ".Sinam3dong" android:label ="sinam3dong 액티비티"/>
+        <activity android:name = ".Sinam4dong" android:label ="sinam4dong 액티비티"/>
+        <activity android:name = ".Sinam5dong" android:label ="sinam5dong 액티비티"/>
+        <activity android:name = ".Sincheon12dong" android:label ="sincheon1,2dong 액티비티"/>
+        <activity android:name = ".Sincheon3dong" android:label ="sincheon3dong 액티비티"/>
+        <activity android:name = ".Sincheon4dong" android:label ="Sincheon4dong 액티비티"/>
+        <activity android:name = ".Hyomok1dong" android:label ="hyomok1dong 액티비티"/>
+        <activity android:name = ".Hyomok2dong" android:label ="hyomok2dong 액티비티"/>
+        <activity android:name = ".Dopyungdong" android:label ="dopyungdong 액티비티"/>
+        <activity android:name = ".Bullobongmudong" android:label ="bullobongmudong 액티비티"/>
+        <activity android:name = ".Jijeodong" android:label ="jijeodong 액티비티"/>
+        <activity android:name = ".Dongchondong" android:label ="dongchondong 액티비티"/>
+        <activity android:name = ".Bangchondong" android:label ="bangchondong 액티비티"/>
+        <activity android:name = ".Gongsandong" android:label ="gongsandong 액티비티"/>
+        <activity android:name = ".Haeandong" android:label ="haeandong 액티비티"/>
+        <activity android:name = ".Ansim1dong" android:label ="ansim1dong 액티비티"/>
+        <activity android:name = ".Ansim2dong" android:label ="ansim2dong 액티비티"/>
+        <activity android:name = ".Ansim34dong" android:label ="ansim3,4dong 액티비티"/>
+        <activity android:name = ".Galma1dong" android:label ="galma1dong 액티비티"/>
+        <activity android:name = ".Galma2dong" android:label ="galma2dong 액티비티"/>
+        <activity android:name = ".Gasoowondong" android:label ="gasoowondong 액티비티"/>
+        <activity android:name = ".Gajangdong" android:label ="gajangdong 액티비티"/>
+        <activity android:name = ".Gisungdong" android:label ="gisungdong 액티비티"/>
+        <activity android:name = ".Gwanjeo1dong" android:label ="gwanjeo1dong 액티비티"/>
+        <activity android:name = ".Gwanjeo2dong" android:label ="gwanjeo2dong 액티비티"/>
+        <activity android:name = ".Gwijeongdong" android:label ="gwijeongdong 액티비티"/>
+        <activity android:name = ".Naedong" android:label ="naedong 액티비티"/>
+        <activity android:name = ".Doma1dong" android:label ="doma1dong 액티비티"/>
+        <activity android:name = ".Doma2dong" android:label ="doma2dong 액티비티"/>
+        <activity android:name = ".Doandong" android:label ="doandong 액티비티"/>
+        <activity android:name = ".Doonsan1dong" android:label ="doonsan1dong 액티비티"/>
+        <activity android:name = ".Doonsan2dong" android:label ="doonsan2dong 액티비티"/>
+        <activity android:name = ".Doonsan3dong" android:label ="doonsan3dong 액티비티"/>
+        <activity android:name = ".Mannyundong" android:label ="mannyundong 액티비티"/>
+        <activity android:name = ".Byundong" android:label ="byundong 액티비티"/>
+        <activity android:name = ".Boksoodong" android:label ="boksoodong 액티비티"/>
+        <activity android:name = ".Yongmoondong" android:label ="yongmoondong 액티비티"/>
+        <activity android:name = ".Wolpyung1dong" android:label ="wolpyung1dong 액티비티"/>
+        <activity android:name = ".Wolpyung2dong" android:label ="wolpyung2dong 액티비티"/>
+        <activity android:name = ".Wolpyung3dong" android:label ="wolpyung3dong 액티비티"/>
+        <activity android:name = ".Jeonglimdong" android:label ="Jeonglimdong 액티비티"/>
+        <activity android:name = ".Crinnetdong" android:label ="crinnetdong 액티비티"/>
+        <activity android:name = ".Elsecrinnetdong" android:label ="elsecrinnetdong 액티비티"/>
+        <activity android:name = ".Tanbangdong" android:label ="tanbangdong 액티비티"/>
+        <activity android:name = ".Gooseodong" android:label ="gooseodong 액티비티"/>
+        <activity android:name = ".Geumsadong" android:label ="geumsadong 액티비티"/>
+        <activity android:name = ".Geumsungdong" android:label ="geumsungdong 액티비티"/>
+        <activity android:name = ".Namsandong" android:label ="namsandong 액티비티"/>
+        <activity android:name = ".Boogok1dong" android:label ="boogok1dong 액티비티"/>
+        <activity android:name = ".Boogok2dong" android:label ="boogok2dong 액티비티"/>
+        <activity android:name = ".Boogok3dong" android:label ="boogok3dong 액티비티"/>
+        <activity android:name = ".Boogok4dong" android:label ="boogok4dong 액티비티"/>
+        <activity android:name = ".Seodong" android:label ="seodong 액티비티"/>
+        <activity android:name = ".Sundoogoodong" android:label ="sundoogoodong 액티비티"/>
+        <activity android:name = ".Jangjeondong" android:label ="jangjeondong 액티비티"/>
+        <activity android:name = ".Cheongryongnopodong" android:label ="cheongryongnopodong 액티비티"/>
+        <activity android:name = ".Bangeodong" android:label ="Bangeodong 액티비티"/>
+        <activity android:name = ".Hwajeongdong" android:label ="hwajeongdong 액티비티"/>
+        <activity android:name = ".Ilsandong" android:label ="ilsandong 액티비티"/>
+        <activity android:name = ".Jeonhadong" android:label ="jeonhadong 액티비티"/>
+        <activity android:name = ".Mipodong" android:label ="mipodong 액티비티"/>
+        <activity android:name = ".Joojeondong" android:label ="joojeondong 액티비티"/>
+        <activity android:name = ".Dongboodong" android:label ="Dongboodong 액티비티"/>
+        <activity android:name = ".Seoboodong" android:label ="seoboodong 액티비티"/>
+        <activity android:name = ".Daesongdong" android:label ="daesongdong 액티비티"/>
+        <activity android:name = ".Jeonha1dong" android:label ="jeonha1dong 액티비티"/>
+        <activity android:name = ".Jeonha2dong" android:label ="jeonha2dong 액티비티"/>
+        <activity android:name = ".Nammok1dong" android:label ="nammok1dong 액티비티"/>
+        <activity android:name = ".Nammok2dong" android:label ="nammok2dong 액티비티"/>
+        <activity android:name = ".Nammok3dong" android:label ="nammok3dong 액티비티"/>
+        <activity android:name = ".GlassRecycle" android:label ="glassrecycle 액티비티"/>
+        <activity android:name = ".PaperRecycle" android:label ="paperrecycle 액티비티"/>
+        <activity android:name = ".Plastic" android:label ="plastic 액티비티"/>
+        <activity android:name = ".Binil" android:label ="binil 액티비티"/>
+        <activity android:name = ".Can" android:label ="can 액티비티"/>
+        <activity android:name = ".Pet" android:label ="pet 액티비티"/>
+        <activity android:name = ".Kid_quiz" android:label ="kid_quiz 액티비티"/>
+        <activity android:name = ".Adult_quiz" android:label ="adult_quiz 액티비티"/>
+        <activity android:name = ".Setting" android:label ="setting 액티비티"/>
+        <activity android:name = ".BalpoRecycle" android:label ="balporecycle 액티비티"/>
+        <activity android:name = ".Alarm" android:label ="alarm 액티비티"/>
+    </application>
+</manifest>

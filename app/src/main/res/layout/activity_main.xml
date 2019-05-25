@@ -1,0 +1,471 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 맨위 화면 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#36B3B3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/coverimage3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="어서와 분리수거는 처음이지?"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/setting"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/setting" />
+            </LinearLayout>
+
+
+            <!-- 맨위 화면 -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 지역별 탭 라인 시작 -->
+
+                <LinearLayout
+                    android:id="@+id/tabSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ViewFlipper
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:id="@+id/flipper">
+
+                            <ImageButton android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:id="@+id/img01"
+                                android:src="@drawable/a"
+                                android:background="@android:color/transparent"/>
+
+                            <ImageButton android:layout_height="150dp"
+                                android:layout_width="match_parent"
+                                android:id="@+id/img02"
+                                android:src="@drawable/b"
+                                android:background="@android:color/transparent"/>
+
+                            <ImageButton android:layout_height="150dp"
+                                android:layout_width="match_parent"
+                                android:id="@+id/img03"
+                                android:src="@drawable/c"
+                                android:background="@android:color/transparent"/>
+
+                            <ImageButton android:layout_height="150dp"
+                                android:layout_width="match_parent"
+                                android:id="@+id/img04"
+                                android:src="@drawable/d"
+                                android:background="@android:color/transparent"/>
+
+                        </ViewFlipper>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="우리 동네는?"
+                                android:textColor="#000000"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- 지역선택 스피너 라인 시작 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33" />
+
+                    </LinearLayout>
+                    <!-- 탭_지역별_스피너 라인 끝-->
+                </LinearLayout>
+                <!--지역별 탭 라인 끝-->
+
+                <TableLayout
+                    android:id="@+id/tabArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/a1"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/a1" />
+
+                        <ImageButton
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/b1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/b1" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/c1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/c1" />
+
+                        <!--기달 이거 왜 다른 인텐트로 넘어가지는게 안만들어지누? -->
+                        <ImageButton
+                            android:id="@+id/d1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/d1" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/e1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/e1" />
+
+
+                        <ImageButton
+                            android:id="@+id/f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/f1" />
+                    </LinearLayout>
+
+
+                </TableLayout>
+
+
+                <!--신고 xml 부분 -->
+
+                <LinearLayout
+                    android:id="@+id/tabAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="1. 신고기준"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:text="① 무단투기 사진 또는 영상\n② 무단 투기한 사람 신상정보\n③ 차랑 투기시 차량 번호 확인"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#EAEAEA"/>
+
+                        <!-- 신고 기준_라인 끝 -->
+
+                        <!-- ①②③④⑤⑥⑦⑧⑨ -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="2. 과태료 기준"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/image" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#000000"
+                            android:text="① 휴대 폐기물 무단 투기 5만원\n② 보관기구 폐기물 무단투기 20만원\n③ 휴식 중 무단투기 20만원\n④ 운반장비 이용 중 무단투기 50만원\n⑤ 사업활동 중 발생하는 폐기물 소각 70만원 \n⑥ 사업 활동 중 발생하는 폐기물 무단투기, 매립 100만원" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#EAEAEA"/>
+
+                        <!-- 과태료 기준_라인 끝 -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="3. 신고방법"/>
+
+                        <!-- text url 넣는법
+                         android:text="http://www.donggu.kr/menu.es?mid=a10408010600"
+                            android:linksClickable="true"
+                            android:autoLink="web"
+                            이런식으로 하면 넣어짐
+                        -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#000000"
+                            android:text="동네를 선택해주세요."
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner4"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.21" />
+
+                        <Spinner
+                            android:id="@+id/spinner5"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.21" />
+
+                        <Spinner
+                            android:id="@+id/spinner6"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.21" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 탭_신고 라인 끝 -->
+
+                <!-- 탭_게임 라인 시작-->
+
+                <LinearLayout
+                    android:id="@+id/game"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/kid_quiz" />
+
+                    <Button
+                        android:id="@+id/kid_quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#63b2b2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:text="아이와 함께하는 Quiz" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/adult_quiz" />
+
+                    <Button
+                        android:id="@+id/adult_quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#63b2b2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:text="분리수거 상식 Quiz"
+                        />
+                </LinearLayout>
+
+                <!-- 탭_게임 라인 끝 -->
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</TabHost>

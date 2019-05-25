@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="#7fffd4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:text="페트류" />
+    </LinearLayout>
+    <!--View는 선긋는 코드 !-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1)음료페트류"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="① 종류 : 음료페트, 기름페트 등" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="② 분리배출요령 : 캔속에 들어있는 내용물을 깨끗이 비우고 물로 헹군후 배출한다.." />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="③ 주의사항
+    ≡ 겉 또는 속의 플라스틱 뚜껑은 제거해야한다.
+    ≡ 최대한 압착해서 부피를 줄인 후 버린다." />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2) 기타페트류" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="① 종류 : 알약포장재, 칫솔, 카세트테이프 등" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="② 분리배출요령 : 쓰레기종량제 봉투에 버린다." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  ③ 주의사항
+    ≡ 여러재질이 섞여있기에 불리가 어려우므로 쓰레기종량제 봉투에 버린다." />
+</LinearLayout>
